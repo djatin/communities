@@ -1,0 +1,6 @@
+name = Communities
+description = Save The Children Children's Communities theme
+base theme = common
+core = 7.x
+
+scripts[] = js/theme-scripts.js
