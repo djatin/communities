@@ -34,7 +34,7 @@
 .navigation {
         width: 100%;
         position: absolute;
-        top: 10.75em;
+        top: 10em;
         z-index: @zindex-nav;
 }
     
@@ -52,6 +52,7 @@
     
 .navigation .menu li {
     display: table-cell;
+    position: relative;
 }
     
 //Submenu -------------------
@@ -72,7 +73,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    width: 100%;
+    width: 12em;
     z-index: @zindex-nav;
 }
  
@@ -93,20 +94,25 @@
 // global navigation -------------------
     
 .navigation__global-nav > .menu {
-    .one-half();
+    float: right;
+    margin-top: -6em;
 }
     
 // utility navigation -------------------
 .navigation__utility-nav {
     position: absolute;
-    top: -9.25em;
+    top: -8.75em;
     right: 0;
 }
 
 .navigation__utility-nav > .menu {
-    .one-whole();
+    float: left;
 }
 
+.navigation .menu li .menu li {
+    display: block;
+}
+    
 //end 768 major
 });
 

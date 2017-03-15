@@ -104,7 +104,7 @@
 .min-width(@medium_major {
     
     .d-section--style-banner, .o-splash {
-        height: 40em; // must match image
+        height: 35em; // must match image
     // cut off the banner here
         overflow: hidden;
     }
@@ -122,7 +122,7 @@
     .o-splash__anchor {
         // height needs to be set to the aspect ratio fo the banner image
         // currently
-        height: 40em;
+        height: 100%;
         position: absolute;
         top: 0;
         left: 0;
@@ -190,7 +190,7 @@
         width: 100%;
         max-width: none;  
         height: auto;
-        min-height: 40em;
+        min-height: 100%;
         });
     }
 
@@ -201,7 +201,24 @@
 
 
 .d-section--style-banner[class*="--style-banner-1"], .d-section--style-banner-1 .o-splash {
-        height: 28.5em; // 456px
+       // height: 28.5em;
+} 
+.d-section--style-2{
+    overflow: visible;
+    margin-bottom: 3em;
+    height: 40em;
+    .o-splash{
+        overflow: hidden;
+    }
+    &:after{
+        background: url(../img/big_squiggly-opt.png) no-repeat;
+        content: '';
+        display: block;
+        height: 16em;
+        width: 100%;
+        background-size: 100%;
+        margin-top: -16%;
+    }
 } 
 
 
@@ -211,13 +228,50 @@
          &:after {
             display: block;
             content:"";
-            margin: 0.75em auto 0;
-            width: 2.25em; //36px;
-            height: 2.25em; //36px;
-            background: transparent url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20xmlns%3Aa%3D%22http%3A//ns.adobe.com/AdobeSVGViewerExtensions/3.0/%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20overflow%3D%22visible%22%20enable-background%3D%22new%200%200%2048%2048%22%20xml%3Aspace%3D%22preserve%22%3E%3Crect%20x%3D%2246.875%22%20y%3D%2246.875%22%20fill%3D%22none%22%20width%3D%22156.25%22%20height%3D%22156.25%22/%3E%3Cpolygon%20fill%3D%22%23A4A4A4%22%20points%3D%2224%2C35.655%2042%2C17.655%2036.69%2C12.345%2024%2C25.05%2011.31%2C12.345%206%2C17.655%20%22/%3E%3Ccircle%20display%3D%22none%22%20fill%3D%22%235A5A5A%22%20cx%3D%22125%22%20cy%3D%22125%22%20r%3D%22125%22/%3E%3C/svg%3E%0D%0A') center center no-repeat;
-            background-size: 3em 3em;
+            margin: 1.75em auto 0;
+            width: 2.7em; //36px;
+            height: 1.5em; //36px;
+            //background: transparent url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20xmlns%3Aa%3D%22http%3A//ns.adobe.com/AdobeSVGViewerExtensions/3.0/%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%20overflow%3D%22visible%22%20enable-background%3D%22new%200%200%2048%2048%22%20xml%3Aspace%3D%22preserve%22%3E%3Crect%20x%3D%2246.875%22%20y%3D%2246.875%22%20fill%3D%22none%22%20width%3D%22156.25%22%20height%3D%22156.25%22/%3E%3Cpolygon%20fill%3D%22%23A4A4A4%22%20points%3D%2224%2C35.655%2042%2C17.655%2036.69%2C12.345%2024%2C25.05%2011.31%2C12.345%206%2C17.655%20%22/%3E%3Ccircle%20display%3D%22none%22%20fill%3D%22%235A5A5A%22%20cx%3D%22125%22%20cy%3D%22125%22%20r%3D%22125%22/%3E%3C/svg%3E%0D%0A') center center no-repeat;
+            background: url(../img/down_arrow.png) no-repeat;
+            background-size: 100%;
+            position: absolute;
+            bottom: 2em;
+            left: 48%;
         }
     });
 }
 
-
+.d-section--modification-1, .d-section--modification-1 .o-splash{
+    height: auto;
+    background: none;
+    overflow: visible;
+    .o-splash__anchor {
+        overflow: hidden;
+    }
+}
+.d-section--modification-1 .o-splash{
+    position: relative;
+    .min-width(48em{
+        &:before{
+            content: '';
+            width: 5.75em;
+            height: 6.125em;
+            position: absolute;
+            top: -7%;
+            left: 22%;
+            z-index: 450;
+            background: url(../img/kite.png) no-repeat;
+        }
+    });
+    .o-splash__anchor{
+        img{
+            top: -10em;
+        }
+    }
+}
+.d-section--style-banner-1{
+    .o-splash__hgroup{
+        max-width: 36em;
+        margin: auto;
+    }
+}

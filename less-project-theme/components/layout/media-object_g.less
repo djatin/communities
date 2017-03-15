@@ -34,6 +34,32 @@
     margin-top: @baseline;
 }
 
+.o-media .o-media__body .title{
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.d-section--style-3 .o-media__body{
+    padding: 0 2% 0 4%;
+    color: @white;
+    .title{
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: .075em;
+        color: @white;
+        font-family: @font-stack__schoolbell;
+        font-size: 3.125em;
+        &:after{
+            content: '';
+            display: block;
+            height: 1px;
+            max-width: 70%;
+            margin-top: .75em;
+            background: @white;
+        }
+    }
+}
+
 //elements in situe
 //.d-section--alignment-none (image above text default)
 //.d-section--alignment-center(image on top with text centered)

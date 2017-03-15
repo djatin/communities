@@ -24,6 +24,7 @@ infographic__figcaption (wrapper for the text)
 
 .infographic {
     margin-top: 3em;
+    color: @basecolor;
     text-align: center;
     &:first-child {
         margin-top: 0;   
@@ -41,13 +42,17 @@ infographic__figcaption (wrapper for the text)
 }
 
 .infographic__title {
-    font-weight: 700;
+    font-weight: normal;
+    font-size: 1.8625em;
+    //line-height: 2em;
+    color: @titlecolor;
+    text-transform: uppercase;
+    font-family: @font-stack__schoolbell;
 }
 
 .infographic__text {
     min-height: 6em;
     .epsilon ();
-    color: @grey--light-3;
 }
 
 .infographic__btn {
@@ -59,6 +64,12 @@ infographic__figcaption (wrapper for the text)
     margin: 3em auto;
 }
 
+.figure-group--5 .infographic img{
+    width: auto;
+} 
+.figure-group--5 .infographic__title{
+    line-height: normal;
+} 
 
 // Component in situ 
 

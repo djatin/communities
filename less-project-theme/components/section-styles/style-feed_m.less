@@ -77,6 +77,49 @@
     
 }
 
+.d-feed--style-1{
+    .d-feed__body{
+        display: block;
+    }
+    .o-tile{
+        padding: 0 1.5em;
+        .min-width-max(1em{
+            margin-bottom: 1.5em;
+        }59.9999em);
+        .o-tile__body{
+            border: none;
+            background: @teal;
+            color: @white;
+            text-align: left;
+            .o-tile__title{
+                margin-top: 0;
+                font-size: .875em;
+                margin-bottom: 1em;
+                line-height: normal;
+                a{
+                    color: @white;
+                    text-decoration: none;
+                }
+            }
+        }
+        .o-btn{
+            margin-top: 0;
+            border: none;
+            background: @teal;
+            text-align: left;
+            a{
+                background: darken(@teal, 25%);
+                margin: 0 1.5em 1.5em 1.5em;
+                min-width: auto;
+                padding: .75em;
+                .min-width-max(1em{
+                    font-size: .75em;
+                }17.5em);
+            }
+        }
+    }
+}
+
 
 /*// OVERFLOW SCROLL 
 

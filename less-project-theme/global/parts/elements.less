@@ -80,28 +80,26 @@ q {
 */
 
 blockquote {
-    margin: 2.30769230769231em 0 1.38461538461538em;
+    margin: 0 0 1em;
     .beta ();
-    .letterspacing60();
-    font-family: @fall-back--serif;
-    font-style: italic;
-    clear: both;
+    font-weight: 700;
     text-align: left;
     /* Text */
     p {
         font-size: inherit !important;
         line-height: inherit !important;
         font-weight: inherit !important;
+        display: inline;
     }
     /* Quotemarks */
     &:before {
         content:"\201C"; // double quote   
-        display: block;
-        margin-left: -1em;
+        display: inline;
         line-height: 1;
+        left: 0;
+        top: 0;
         font-weight: 700;
-        position: relative;
-        top: 1em;
+        position: static;
     }
 }
 

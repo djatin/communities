@@ -5,7 +5,7 @@
 //@base-url : 'clockworkpie.bigmallet.co.uk'; //maybe useful on small builds
 @htmlcolor : @white; 
 @bodycolor : @htmlcolor; //
-@textcolor : @grey; // text grey #757575
+@textcolor : @basecolor; // text grey #757575
 
 // 2. TYPOGRAPHY 			==============================
 // Font Stack add a font stack (if you want to fallback to something more intesting than aerial or helvetia
@@ -14,6 +14,8 @@
 
 @font-stack__open: 'Open Sans', @fall-back--sans-serif;
 @font-stack__codefont : Monaco, Courier New, monospace;
+@font-stack__schoolbell : 'Schoolbell', cursive;
+@font-stack__ralway : 'Raleway', @fall-back--sans-serif;
 
 
 @basefont : @font-stack__open;
@@ -24,11 +26,11 @@
 
 // 3. COLOUR 				==============================
 
-@basecolor : #008857;
+@basecolor : #2f797a;
 
 //@emergencybg : rgb(247, 105, 105); //#f76969
 @twitterbg : rgb(0,158,239); //#009eef 
-@footerbg : @grey--dark-4; //#2a2a2a
+@footerbg : @teal; //#2a2a2a
 @footertextcolor : @grey--light-1;
 
 @highlight--color-1 : rgb(52,152,219); // #3498DB a blue
@@ -51,6 +53,19 @@
 @grey--dark-3: rgb(74,71,71); //#4a4747
 @grey--dark-4: rgb(42,42,42); //#2a2a2a
 
+@green--1: #2d6f5f;
+@teal: #2f797a;
+@red: #ca291a;
+@pink: #d04450;
+@olive: #667712;
+@green--2: #146e0e;
+@brown: #a1680b;
+@menucolor: #377e7f;
+@menuhovercolor: #2f797a;
+
+@titlecolor: #2d6f5f;
+@subtitlecolor: #2f797a;
+
 @black : rgb(0,19,20); // never use pure black 001314
 
 // greys based on blacks
@@ -58,7 +73,7 @@
 @grey-color-10: lighten(@grey, 10%);
 @grey-color-20: lighten(@grey, 20%);
 @grey-color-30: lighten(@grey, 30%);
-@grey: rgb(135,135,135); // text grey #878787 OK for Headings 
+@grey: rgb(102,102,102); // text grey #878787 OK for Headings 
 @grey-dk-color-20: darken(@grey, 20%); // text grey this is accessible
 @grey-dk-color-70: darken(@grey, 70%);
 @grey-dk-color-80: darken(@grey, 80%);
@@ -148,8 +163,8 @@
 
 // Logo sizes
 //logo--site
-@siteLogoWidth: 17.5em; //280px;
-@siteLogoHeight: 4.125em; //66px;
+@siteLogoWidth: 24em; //280px;
+@siteLogoHeight: 5.75em; //66px;
 
 // gutter variable
 @gutter:                 6%;

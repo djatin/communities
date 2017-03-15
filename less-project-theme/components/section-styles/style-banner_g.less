@@ -62,8 +62,10 @@
 
 .o-splash__text {
     margin: 0 auto;
-    max-width: 30em;
-       
+    max-width: 43em;
+    p{
+        line-height: normal;
+    }
 }
 
 .o-splash__icon {
@@ -73,9 +75,15 @@
 
 // Typography 
 .title--splash {
-    margin-top: 0;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    max-width: 15em;
+    font-weight: normal;
+    color: @white;
 }
-
+.subtitle--splash{
+    color: @white;
+}
 
 // Component in situ 
 
@@ -97,6 +105,28 @@
        margin-right: 0;
 }
 
+.d-section--modification-1{ 
+    .o-splash__anchor{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .o-splash__wrapper{
+        display: block;
+        .title--splash{
+            color: @titlecolor;
+            font-size: 3.125em;
+            max-width: 9em;
+            margin-top: 0.5em;
+            letter-spacing: normal;
+            text-transform: none;
+        }
+        &:after{
+            .visually-hidden();
+        }
+    }
+}
 
 
 //Tall / Short / Other styles 

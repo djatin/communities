@@ -76,6 +76,12 @@
             float: none;
     }
     
+    .d-section--style-3{
+        .o-media__item{
+            width: 67%;
+        }
+    }
+    
 });
 
 
@@ -92,7 +98,24 @@
     
     
 });
-
+.d-section--media-1,
+.d-section--media-2,
+.d-section--media-3{
+    .min-width(48em{
+        .o-media{
+            position: relative;
+            .o-media__item figure{
+                position: absolute;
+                bottom: 0;
+                max-width: 20em;
+                right: 5%;
+            }
+            .o-media__body{
+                max-width: 50%;
+            }
+        }
+    });
+}
 // SITE SPECIFIC TWEAKS =================================================== 
 
 

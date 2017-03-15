@@ -68,19 +68,19 @@
 .menu a, .menu span {
     display: block;
     padding: 1.25em;
-    font-size: 0.75em;
+    font-size: 1.0625em;
     text-decoration: none;
+    color: @menucolor;
+    text-transform: lowercase;
+    font-weight: 600;
     &:active, &:focus {
         outline: 0;
     }
     &:active, &:focus, &.active, &.is-active {
-        background: darken(@basecolor, 10%);
-        color: @white;
+        font-weight: bold;
     }
     &:hover {
-        
-        background: @basecolor;
-        color: @whiteonblack;
+        color:  @menuhovercolor;
     }
     
 }
@@ -93,12 +93,14 @@
 // both 
 .global-nav a, .global-nav span, .utility-nav a {
     font-family: inherit;
-    .letterspacing60();
 }
 
-// global navigation -------------------
-.global-nav a, .global-nav span {
+
+.navigation__utility-nav > .menu li a{
+    color: #a6a6a6;
+    font-size: .625em;
     text-transform: uppercase;
+    font-family: @font-stack__ralway;
 }
 
 // utility navigation -------------------
@@ -108,10 +110,15 @@
 
 // Component insitue
 .contentinfo .menu a {
-      color: @white;
+    color: @white;
+    padding: 0;    
 }
 
 // utility navigation -------------------
 .naviagtion .utility-nav {
     margin-top: 1.5em;   
+}
+.menu .menu li a {
+    line-height: normal;
+    padding: .5em .5em .5em 1.5em
 }
