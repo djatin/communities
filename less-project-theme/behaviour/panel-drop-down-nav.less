@@ -26,7 +26,7 @@
 .panel .panel__link {
     //1px/0.0625em
     .min-width(0.0625em; {
-        padding-right: 1.5em; //specific to each implementaion
+        //padding-right: 1.5em; //specific to each implementaion
         position: relative;
         &:after {
              display: none;  
@@ -37,13 +37,13 @@
             width: 0;
             .arrow-down();
             .arrow-sm();
-            border-top-color: @whiteonblack;
+            border-top-color: @menucolor;
             position: absolute;
             top: 50%;
             right: 0.46153846153846em;
             .transition(all @duration-quickly ease-in-out);
         }
-        &:hover, &:active, &:focus, &.is-active {
+        &.is-active {
             &:after {
                border-top-color: @white; 
             }

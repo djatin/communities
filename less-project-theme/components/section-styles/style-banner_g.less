@@ -42,7 +42,7 @@
 
 
 .o-splash {
-    margin-bottom: 1px;
+    //margin-bottom: 1px;
     color: @white;
     background: @basecolor;  
     text-align: center;
@@ -105,26 +105,21 @@
        margin-right: 0;
 }
 
-.d-section--modification-1{ 
-    .o-splash__anchor{
-        img{
-            width: 100%;
-            height: auto;
-        }
-    }
-    .o-splash__wrapper{
+.d-section--modification-1{
+    .section__o-media{
         display: block;
-        .title--splash{
-            color: @titlecolor;
-            font-size: 3.125em;
-            max-width: 9em;
-            margin-top: 0.5em;
+        .o-media__body{
+            max-width: 27em;
+            margin: 0 auto;
             letter-spacing: normal;
             text-transform: none;
         }
         &:after{
             .visually-hidden();
         }
+    }
+    .section__figure-group{
+        margin-top: 0;
     }
 }
 

@@ -70,7 +70,7 @@
         
 .panel > .menu { 
     position: absolute;
-    top: 100%;
+    //top: 2.65em;
     left: 0;
     right: 0;
     width: 12em;
@@ -79,8 +79,7 @@
  
 // Coloring 
 .menu__panel ul {
-    background: darken(@basecolor, 10%);
-        
+    background: darken(@basecolor, 10%);        
 }   
     
 .menu__panel ul a {
@@ -95,13 +94,13 @@
     
 .navigation__global-nav > .menu {
     float: right;
-    margin-top: -6em;
+    margin-top: -5.2em;
 }
     
 // utility navigation -------------------
 .navigation__utility-nav {
     position: absolute;
-    top: -8.75em;
+    top: -8em;
     right: 0;
 }
 
@@ -115,7 +114,50 @@
     
 //end 768 major
 });
+.min-width(48em{
+    .navigation .menu li .menu li {
+        &:hover{
+            background: lighten(@basecolor, 2%);
+        }
+    }
+});
 
+.min-width-max(.625em{
+    .navigation .menu{
+        padding: 1.25em 0 0 1.25em;
+        li{
+            a{
+                padding: .5em .5em 0 0;
+                font-weight: bold;
+            }
+            .menu{
+                padding: 0;
+                li a{
+                    padding: .5em .5em .5em 0;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .navigation__utility-nav >.menu{
+        padding-top: 0;
+        li a{
+            font-size: 1.0625em;
+            color: @menucolor;
+            text-transform: lowercase;
+        }
+    }
+}47.9999em);
+
+.toggle-control {
+    .min-width(20em{
+        width: 3em;
+        height: 3em;
+    });
+    .min-width(30em{
+        margin: 2.25em .75em 0;
+    });
+}
 // Media Queries for component in situ 
 // navigation menu --------------------------------
 

@@ -35,10 +35,10 @@
 
 .toggle-control {
     display: block;
-    margin: 0.75em;
+    margin: 1.5em 0.75em 0;
     padding: 0.6875em;
-    min-height: 3em;
-    min-width: 3em;
+    min-height: 2em;
+    min-width: 2em;
     border: 1px solid @grey;
     background: transparent;
     text-align: center;
@@ -50,9 +50,9 @@
         background-color: @grey;
     }
     &:focus {
-       outline: 2px solid #99ccff; 
-       outline-offset: -2px;
-    }   
+        outline: 2px solid #99ccff; 
+        outline-offset: -2px;
+    }
 }
 
 
@@ -67,20 +67,20 @@
 
 .menu a, .menu span {
     display: block;
-    padding: 1.25em;
+    padding: .75em 1em;
     font-size: 1.0625em;
     text-decoration: none;
     color: @menucolor;
     text-transform: lowercase;
-    font-weight: 600;
     &:active, &:focus {
         outline: 0;
     }
-    &:active, &:focus, &.active, &.is-active {
-        font-weight: bold;
-    }
     &:hover {
         color:  @menuhovercolor;
+    }
+    &.active, &.is-active, &.active:hover, &.is-active:hover {
+        background: darken(@basecolor, 10%);
+        color: @white;
     }
     
 }
@@ -111,7 +111,7 @@
 // Component insitue
 .contentinfo .menu a {
     color: @white;
-    padding: 0;    
+    padding: .75em 0;    
 }
 
 // utility navigation -------------------
@@ -120,5 +120,5 @@
 }
 .menu .menu li a {
     line-height: normal;
-    padding: .5em .5em .5em 1.5em
+    padding: .5em .5em .5em 1em;
 }
