@@ -188,7 +188,9 @@
     height: auto;
     background: none;
     padding: 0;
-    margin-top: 2em;
+    .min-width(52em{
+        margin-top: 2em;
+    });
     .wrapper--max-w{
         width: 100%;
         max-width: 100%;
@@ -197,7 +199,9 @@
         max-width: 96%;
         margin: auto;
         .title{
-            margin-top: 0;
+            .min-width(52em{
+                margin-top: 0;
+            });
         }
     }
     .figure-group{
@@ -339,11 +343,20 @@
             height: 4em;
         });
     }
-    &.d-section--style-2:before{
-        background: url(../img/teal_wavy_opt.png) no-repeat;
-        .min-width(30em{
-            margin-top: -1%;
-        });
+    &.d-section--style-2{
+        .o-splash__wrapper{
+            .min-width-max(1m{
+                padding-top: 1em;
+            }39.9999em);
+        }
+        &:before{
+            display: none !important;
+            .min-width(40em{
+                background: url(../img/teal_wavy_opt.png) no-repeat;
+                display: block !important;
+                margin-top: -1%;
+            });
+        }
     }
     &.d-section--icon .o-media{
         position: relative;
