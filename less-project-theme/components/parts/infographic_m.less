@@ -144,4 +144,29 @@ infographic__figcaption (wrapper for the text)
     });
 }
 
+.section__figure-group[class*='--5']{
+    .min-width(40em{
+        margin: 0 -3%;
+    });
+    .infographic{
+        margin-top: 2em;
+        .min-width(40px{
+            max-width: 50%;
+            float: left;
+            &:first-child{
+                margin-top: 2em;
+            }
+        });
+        .min-width(60px{
+            max-width: 33.3333%;
+            float: left;
+        });
+    }
+    &:after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+
 // Media Queries for component in situ

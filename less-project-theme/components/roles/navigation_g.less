@@ -71,6 +71,7 @@
     font-size: 1.0625em;
     text-decoration: none;
     color: @menucolor;
+    line-height: 1em;
     text-transform: lowercase;
     &:active, &:focus {
         outline: 0;
@@ -109,9 +110,23 @@
  
 
 // Component insitue
-.contentinfo .menu a {
-    color: @white;
-    padding: .75em 0;    
+.contentinfo .menu li{
+    a, span{
+        color: @white;
+        padding: .75em 0;
+        font-weight: bold;
+    }
+    ul li a {
+        font-weight: 300;
+        padding: .5em 0;
+        display: inline-block;
+        &:hover{
+            opacity: .75;
+        }
+    }
+    &.active a{
+        background: transparent;
+    }
 }
 
 // utility navigation -------------------
