@@ -31,9 +31,9 @@
 
 
 .search-form .form-text {
-    padding: 0.45em 2em 0.5em 0.25em; // 48px also leave room for the button;
+    padding: 0.4em 2em 0.4em 0; // 48px also leave room for the button;
     height: 3em; //48px; // fix for IE and ff input lineheight
-    font-size: .625em;
+    font-size: .825em;
     background: transparent;
     border: none;
     text-transform: uppercase;
@@ -53,7 +53,7 @@
     background: transparent url(../../common/img/global/bigmallet-ui-icons-sprite.png) -10px -59px no-repeat;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 4px;
     .box-shadow(none);
     &:hover, &:active, &:focus {
         /*margin: 0;
@@ -115,9 +115,9 @@
 // !Search--navigation ----------------------  
 .search--navigation {
     .min-width(48em; {
-        margin: -2px 0 0;
+        margin: -3px 0 0;
         float: right;
-        min-width: 6em;
+        max-width: 7em;
         .search__wrapper{
             padding: 0 .375em;
         }
@@ -143,12 +143,12 @@
         }
         .form-text{
             border: 1px solid @grey;
-            padding: 1.45em .5em;
+            padding: .9em .5em;
             height: auto;
         }
         .form-submit{
-            right: .25em;
-            bottom: .8em;
+            right: .5em;
+            bottom: .9em;
             width: 1.75em;
             height: 1.75em;
         }
